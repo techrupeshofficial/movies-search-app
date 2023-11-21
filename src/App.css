@@ -1,0 +1,232 @@
+/* *{
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+} */
+
+
+#icon{
+  border-radius: 100%;
+}
+
+.App{
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+#main{
+  opacity: 1;
+  color: red !important;
+}
+
+
+
+#bgimg{
+background-image: linear-gradient(rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.747)), url("https://global.discourse-cdn.com/wd/original/3X/0/9/09062a581a721eed2073af9bcd5dad151fe75457.jpg");
+height: 300px;
+padding-top: 30px;
+margin-top: -20px;
+padding: 5px;
+}
+
+
+
+
+
+#bgimg:hover{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.747)), url("https://149512919.v2.pressablecdn.com/wp-content/uploads/2021/12/philly-movies-hero-banner.jpg");
+  height: 300px;
+  padding-top: 30px;
+  margin-top: -20px;
+  padding: 5px;
+  
+}
+
+
+
+
+
+
+
+.text h1{
+  color: white;
+  margin-top: 10px;
+}
+
+.text h2{
+  color: white;
+}
+
+
+input{
+  padding: 5px 20px;
+  margin-right: 10px;
+  width: 600px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+}
+
+button{
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  
+}
+.searchBtn:hover{
+  background: green;
+}
+
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+
+
+
+img{
+  height:200px;
+  width: 200px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+
+#card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around ;
+}
+
+
+
+
+.box{
+  background: rgb(255, 255, 255);
+  height: 440px;
+  width: 270px;
+  margin-top: 40px;
+  border: 2px solid red;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.box:hover{
+  background: #000;
+  color: white;
+  border: 2px solid white;
+}
+
+
+
+
+
+
+body{
+  background: #000000;
+}
+
+
+
+.box h2{
+  line-height: 20px;
+}
+
+
+
+
+
+
+#allimglogo img{
+  width: 60px;
+  height: 60px;
+  margin: 0px 5px 5px 5px;
+  border-radius: 5px;
+  padding-top: -100px;
+  cursor: pointer;
+}
+
+
+
+#allimglogo-img {
+  height:auto;
+}
+
+#allimglogo  img {
+  transition: all .3s ease-in-out;
+}
+
+#allimglogo img:hover   {
+  transform: scale(1.2);
+  border-radius: 6px;
+}
+
+#allimglogo{
+  position: sticky;
+  top: 10;
+} 
+
+
+.zoom-img{
+  height:auto;
+}
+
+
+.zoom-img  img{
+  transition: all .3s ease-in-out;
+}
+
+.zoom-img img:hover{
+  transform: scale(1.2);
+  border-radius: 6px;
+}
+
+
+.seen{
+  background: green;
+  height: 35px;
+  width: 110px;
+  margin-left: 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
+
+
+.watch:hover{
+  transition: all .3s ease-in-out;
+  transform: scale(1.1);
+  /* border-radius: 6px; */
+}
+
+
+
+
+
+.unseen{
+  background: rgb(0, 0, 117);
+  height: 35px;
+  width: 110px;
+  margin-left: 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
