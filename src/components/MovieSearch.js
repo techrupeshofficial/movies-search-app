@@ -9,15 +9,26 @@ function MovieSearch(){
     const [movies, setMovies] = useState([]);
     let [selectedMovies, setSelectedMovies] = useState([])
 
+   
     const handSearch = async ()  =>{
       const apiKey = "4ee976e5"
       const response = await axios.get(`http://www.omdbapi.com/?apikey=${apiKey}&t=${query}`);
-      console.log(response.data);
       if(response.data) setMovies([...movies, response.data])
       setQuery("")
     }
 
+    const handleKeyDown = async (eve)=>{
+      if (eve.key === 'Enter'){
+        const apiKey = "4ee976e5"
+      const response = await axios.get(`http://www.omdbapi.com/?apikey=${apiKey}&t=${query}`);
+      if(response.data) setMovies([...movies, response.data])
+      setQuery("")
+      }
+    }
+  
 
+
+ 
 
     const handleSelect =(movieName) =>{
       setSelectedMovies([...selectedMovies, movieName])
@@ -39,11 +50,12 @@ function MovieSearch(){
             <h2> Millions of movies, TV shows are Available Here You can Explore now. </h2>
             </div>
 
-            <input type='text' placeholder='Search Movie and Get Details.' value={query} onChange={(e)=> setQuery(e.target.value)}/>  
+            <input id='searchInput' type='text' placeholder='Search Movie and Get Details.' value={query} onChange={(e)=> setQuery(e.target.value)}  onKeyDown={handleKeyDown} />  
 
             <button onClick={handSearch} disabled={query.trim().length === 0} className='searchBtn'> Search </button>
             </div>
          </div>
+
 
 
 

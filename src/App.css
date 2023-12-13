@@ -9,6 +9,44 @@ html,body{
 } */
 
 
+
+@media screen and (max-width: 600px) {
+
+  #searchInput{
+    width: 200px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+.searchBtn{
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+#card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around ;
+  margin-top: 80px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
 #icon{
   border-radius: 100%;
 }
@@ -112,6 +150,7 @@ img{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around ;
+  
 }
 
 
